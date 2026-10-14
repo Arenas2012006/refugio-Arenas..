@@ -6,7 +6,7 @@ class Animal:
         self.energia = 50
 
     def presentarse(self):
-        text = f"Hola, soy {self.name}. Especie: {self.species}. Edad: {self.age} años)"
+        text = f"Hola, soy {self.name}. Especie: {self.species}. Edad: {self.age} años"
         print(text)
     def jugar(self):
         self.energia -= 20
