@@ -8,9 +8,6 @@ class Animal:
     def presentarse(self):
         text = f"Hola, soy {self.name}. Especie: {self.species}. Edad: {self.age} años)"
         print(text)
-
-    def presentarse(self):
-            pass
     def jugar(self):
         self.energia -= 20
         if self.energia < 0:
