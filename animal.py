@@ -12,18 +12,18 @@ class Animal:
         self.energia -= 20
         if self.energia < 0:
             self.energia = 0
-        print(f'Jugando... energia actual: {self.energia}')
+        print(f'\n{self.name} jugando... energia actual: {self.energia}')
 
         
     def comer(self, gramos: int):
         self.energia += (gramos // 10)
         if self.energia > 100:
                     self.energia = 0
-        print(f'Comiendo... energia nueva: {self.energia}')
+        print(f'\n{self.name} comiendo... energia nueva: {self.energia}')
         
     def dormir(self):
         self.energia += 30
         if self.energia > 100:
             self.energia = 100 
-        print (f'Durmiendo... energia nueva: {self.energia}')
+        print (f'\n{self.name} durmiendo... energia nueva: {self.energia}')
 
