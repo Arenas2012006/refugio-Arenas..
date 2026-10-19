@@ -1,3 +1,7 @@
+
+import cowsay
+
+
 class Animal:
     def __init__(self, name, species, age):
         self.name = name
@@ -7,7 +11,7 @@ class Animal:
 
     def presentarse(self):
         text = f"Hola, soy {self.name}. Especie: {self.species}. Edad: {self.age} años"
-        print(text)
+        cowsay.cow(text)
     def jugar(self):
         self.energia -= 20
         if self.energia < 0:
